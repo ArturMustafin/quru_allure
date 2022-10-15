@@ -21,8 +21,8 @@ import static io.qameta.allure.Allure.step;
 public class GithubTest extends BaseTest {
 
     WebSteps webSteps = new WebSteps();
-    private static final String ISSUE_NAME = "Bankai";
-    private static final String REPO_LINK = "ArturMustafin/YandexScooter";
+    private static final String ISSUE_NAME = "Test_allure";
+    private static final String REPO_LINK = "ArturMustafin/quru_allure";
 
     @Test
     @Feature("Check Repository")

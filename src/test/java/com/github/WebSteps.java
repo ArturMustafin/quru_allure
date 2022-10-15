@@ -16,7 +16,7 @@ public class WebSteps {
 
     @Step("Открываем главную страницу")
     public void openMainPage() {
-        open("/",GithubPage .class);
+        open("/", GithubPage.class);
     }
 
     @Step("Ищем в поиске репозиторий")
@@ -26,17 +26,17 @@ public class WebSteps {
 
     @Step("В результатах поиска кликаем по ссылке репозитория")
     public void clickOnLinkRepo(String repo) {
-        page(SearchPage .class).repoLinkClick(repo);
+        page(SearchPage.class).repoLinkClick(repo);
     }
 
     @Step("Нажимаем на таб Issues")
     public void clickIssueTab() {
-        page(RepositoriesPage .class).clickTabIssue();
+        page(RepositoriesPage.class).clickTabIssue();
     }
 
     @Step("Проверяем название issue")
     public void checkIssueTitle(String issue) {
-        page(RepositoriesPage .class).checkIssueTitle(issue);
+        page(RepositoriesPage.class).checkIssueTitle(issue);
     }
 
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")

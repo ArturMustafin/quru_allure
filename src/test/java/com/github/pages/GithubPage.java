@@ -13,7 +13,7 @@ public class GithubPage {
         return this;
     }
 
-    public void  setInputFieldSearch(String repo) {
+    public void setInputFieldSearch(String repo) {
         inputSearch.setValue(repo).pressEnter();
     }
 
