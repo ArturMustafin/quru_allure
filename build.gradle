@@ -6,12 +6,18 @@ plugins {
 group 'com.github'
 version '1.0-SNAPSHOT'
 
-compileTestJava {
-    options.encoding = 'UTF-8'
-}
-
 repositories {
     mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
 }
 
 def allureVersion = '2.19.0'
